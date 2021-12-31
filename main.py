@@ -1,11 +1,11 @@
 import discord
-import asyncio
+import time
 
 client = discord.Client()
 
 @client.event
 async def on_message(message):
-	await asyncio.sleep(300000)
+	time.sleep(300)
 	await message.delete()
 
 @client.event
